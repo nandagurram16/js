@@ -8,6 +8,10 @@ function odd(x){
 const output = num.filter(odd)
 
 console.log(output)
+// ===========or==================
+let ames = num.filter((x) => x %2!==0)
+
+console.log(ames)
 // <<<<<<<<<<<<<========or=====>>>>>
 
 let result=num.filter(function odd(x){
@@ -37,3 +41,19 @@ function res(even){
 
 const final_output = numbers.filter(res)
 console.log(final_output)
+// ========================
+const users = [
+    {firstname:'nanda',lastname:'kumar',age:5},
+    {firstname:'naan',lastname:'teup',age:52},
+    {firstname:'trump',lastname:'kumari',age:52},
+    {firstname:'trumoim',lastname:'kaal',age:45}
+]
+
+let final_outpu = users.filter((x) => x.age < 20).map((x) => x.firstname);
+
+console.log(final_outpu)
+// ==============================
+
+let user = users.filter((x) => x.age < 30)
+
+console.log(user)
