@@ -20,3 +20,19 @@ obj2 = {
 
 console.log(obj2)
 
+// array  remove methods
+let array = [1,2,3,4]
+
+let index = array.indexOf(3)
+
+array.splice(index,2)
+console.log(array)
+
+// object remove method
+
+let obj ={
+    ename:'anda',
+    age:'55'
+}
+delete obj.ename
+console.log(obj)
