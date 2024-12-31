@@ -74,21 +74,39 @@ class human{
         console.log(this.age)
     }
 }
-
 class kid extends human{
     constructor(){
+        super()
         this.name = 'kumar'
         this.age = 66
     }
 
     printname(){
-        console.log(this.name,this.age)
+        console.log(this.name)
     }
 }
 
 let kids = new kid();
 kids.printage()
 kids.printname()
+
+// ex-3 wit es7
+// Here no need("this,constructer,super")
+
+class boy {
+    name = 'nanda'
+    printame = () => console.log(this.name)
+}
+
+class bos extends boy{
+    age = 64
+    name = 'gumm'
+    printrn = () =>console.log(this.age)
+}
+
+let obs = new bos()
+obs.printame()
+obs.printrn()
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 // encapsulation
