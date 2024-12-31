@@ -63,6 +63,32 @@ class child extends parent {
 let objects = new child();
 
 objects.getmobile()
+
+//ex:2
+
+class human{
+    constructor(){
+        this.age = 55
+    }
+    printage(){
+        console.log(this.age)
+    }
+}
+
+class kid extends human{
+    constructor(){
+        this.name = 'kumar'
+        this.age = 66
+    }
+
+    printname(){
+        console.log(this.name,this.age)
+    }
+}
+
+let kids = new kid();
+kids.printage()
+kids.printname()
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 // encapsulation
