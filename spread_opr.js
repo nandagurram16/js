@@ -22,11 +22,16 @@ console.log(obj2)
 
 // array  remove methods
 let array = [1,2,3,4]
-
-let index = array.indexOf(3)
-
-array.splice(index,2)
+// let index=array.indexOf(1)
+//array.splice(startindex, deletecount)
+array.splice(1,2)
 console.log(array)
+
+// ex:1
+let fruites = ['apple','banana','orange','grapes','pappaya','pinapple']
+// let index=array.indexOf(5)
+fruites.splice(5,1)
+console.log(fruites)
 
 // object remove method
 
