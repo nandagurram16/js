@@ -120,6 +120,51 @@ const {email,age} = values
 console.log(email)
 console.log(age)
 
+// Rest operator 
+
+const array =(a,...arr) =>{
+    console.log(arr)
+    console.log(a)
+}
+array(1,2,3,4,5,6)
+
+let arr = [10,20,30,40,50,60]
+
+const [...rest] = arr
+console.log(rest)
+
+// in object
+
+const obj = { name: "John", age: 25, city: "New York", country: "USA" };
+
+const { name, ...details } = obj;
+
+console.log(name);    // "John"
+console.log(details); // { age: 25, city: "New York", country: "USA" }
+
+// arrays
+
+let arrays = [1,2,3,4]
+arrays.push(50)
+arrays.pop()
+console.log(arrays)
+
+// splice
+
+let splice = [1,2,3,4,5]
+let index = 2;
+splice.splice(index,3)
+console.log(splice)
+
+// ex1
+
+let remove = [1,2,3,4,5,7]
+let ind = remove.indexOf(4)
+remove.splice(ind,3)
+console.log(remove)
+
+
+
 
 
 
