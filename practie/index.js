@@ -86,6 +86,11 @@ set1 = [1,2,3,4,5]
 set2 = [...set1, 6,7,8,9,10]
 console.log(set2)
 
+num1 = ['iamNandaKumar']
+num2 = [...num1,"iamfromkadiri"]
+
+console.log(num2)
+
 // Spread Operator in object
 
 const cet1={
@@ -93,12 +98,30 @@ const cet1={
     age:24,
     place:'kadiri'
 }
-
 const cet2={
     ...cet1,
     email:'kumar@gmail'
 }
 console.log(cet2)
+
+// Destructuring in array
+
+values = [10,20,50];
+[a,b,c] = values;
+console.log(a,b,c);
+
+// in object
+
+values ={
+    email:'#gmial.cpm',
+    age:20
+}
+const {email,age} = values
+console.log(email)
+console.log(age)
+
+
+
 
 
 
