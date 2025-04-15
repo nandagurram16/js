@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      background-color: aqua;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background-color: #0077cc;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2f3438;
+    }
+  </style>
+  <script>
+    function javasript(){
+        let name = prompt('Enter your name')
+        alert('iam Nanda kumar' + name)
+    }
+  </script>
+</head>
+<body>
+  <div class="hero">
+    <h1>Hello!!</h1>
+    <button onclick="javasript()">Click Here</button>
+  </div>
+</body>
+</html>
