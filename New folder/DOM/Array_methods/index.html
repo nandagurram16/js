@@ -1,0 +1,17 @@
+<script src="object.js"></script>
+
+
+<button id="btn">Click Me</button>
+<script>
+    function setcounter(){
+        let count = 0
+
+        document.getElementById('btn').addEventListener('click', function(){
+            count = count + 1
+            console.log(`clicked ${count} times`)
+        })
+    }
+    setcounter()
+</script>
+
+ 
